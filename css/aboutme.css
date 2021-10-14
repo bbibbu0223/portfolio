@@ -1,0 +1,259 @@
+@font-face {
+    font-family:consola;
+    src: url("../font/consolab.ttf");
+}
+@font-face {
+    font-family:gm;
+    src: url("../font/GmarketSansTTFMedium.ttf");
+}
+.up-on-scroll{
+    transition: transform 0.9s, opacity 1s;
+}
+body{background:#fff8dc;}
+button#project{
+    letter-spacing:-1.3px;
+    position: fixed;
+    right:25px;
+    margin:50px;
+    background: none;
+    font-family:consola;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size:1.2rem;
+    border:none;
+    cursor: pointer;
+}
+a#topBtn { 
+    position: fixed;
+    right: 2%; 
+    bottom: 3%; 
+    display: none; 
+    z-index: 9999; 
+    text-align: center;
+    text-decoration: none;
+    color:cornflowerblue;
+    font-family:consola;
+    font-weight: bold;
+    font-size:1.5rem;
+    animation: rot-top 3s infinite;
+    transition-delay:.3s;
+    }
+@keyframes rot-top {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(-10deg);}
+    100%{transform: rotate(0);}
+}
+.me{
+    position:absolute;
+    top:120px; left:250px;
+    width:auto;
+    height:auto;
+    z-index:-1;
+    transition: all 0.5s 0.2s;
+    animation: rot-img1 3s infinite;
+    transition-delay:.3s;
+}
+@keyframes rot-img1 {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(0);}
+}
+
+.intro{
+    position: absolute;
+    top:200px; left:650px;
+}
+.intro p{
+    line-height:45px;
+    letter-spacing:.3px;
+    font-size:1.2rem;
+    
+    font-family:gm;
+}
+.intro2{
+    position: absolute;
+    top:480px; left:1150px;
+}
+.intro2 p{
+    text-align: right;
+    line-height:35px;
+    letter-spacing:.3px;
+    font-size:1rem;
+    
+    /* font-weight: bold; */
+    font-family:gm;
+}
+.skill-list{
+    position: absolute;
+    top:700px; left:300px;
+    font-weight:bold;
+    font-size:1.5rem;
+    font-family:gm;
+    color:olivedrab;
+}
+
+.skill{
+    position: absolute;
+    display: flex;
+    top:750px; left:270px;
+}
+.my-intro{
+    position: absolute;
+    top:1100px; left:265px;
+    text-align: center;
+    font-weight:bold;
+    font-size:2.5rem;
+    font-family:gm;
+    color:cornflowerblue;
+}
+.my-intro1{
+    padding-top:65%;
+    width:80%;
+    font-family:gm;
+    font-weight: normal;
+}
+.my-intro1 h2{
+    color:#6495ed;
+    font-size:1.5rem;
+    padding-left:260px;
+    padding-top:5%;
+    background-color:peachpuff;
+
+}
+.my-intro1 p{
+    line-height:30px;
+    text-align: left;
+    white-space: pre-line;
+    padding-left:260px;
+    padding-top:2.5%;
+    padding-bottom:3.5%;
+    background-color:peachpuff;
+}
+.my-intro2{
+    margin:10% 0 0 22.5%;
+    
+    background-color:peachpuff;
+    
+    font-family:gm;
+    font-weight: normal;
+}
+.my-intro2 h2{
+    color:cornflowerblue;
+    text-align: right;
+    font-size:1.5rem;
+    padding-right:260px;
+    padding-top:5%;
+}
+.my-intro2 p{
+    text-align: left;
+    white-space: pre-line;
+    line-height:30px;
+    padding-top:2.5%;
+    padding-right:260px;
+    text-align: right;
+    padding-bottom:3.5%;
+}
+.my-intro3{
+    margin:10% 0 0 0%;
+    background-color:peachpuff;
+    width:80%;
+    font-family:gm;
+    font-weight: normal;
+}
+.my-intro3 h2{
+    color:cornflowerblue;
+    font-size:1.5rem;
+    padding-left:260px;
+    padding-top:5%;
+}
+.my-intro3 p{
+    line-height:30px;
+    text-align: left;
+    white-space: pre-line;
+    padding-left:260px;
+    padding-top:2.5%;
+    padding-bottom:3.5%;
+}
+.my-hobby{
+    margin-top:10%; 
+    padding-left:1390px;
+    font-weight:bold;
+    font-size:2.5rem;
+    font-family:gm;
+    color:cornflowerblue;
+}
+.my-hobby1{
+    margin:5% 0 0 22.5%;
+    background-color:peachpuff;
+    font-family:gm;
+    font-weight: normal;
+}
+.my-hobby1 h2{
+    color:cornflowerblue;
+    text-align: right;
+    font-size:1.5rem;
+    padding-right:260px;
+    padding-top:5%;
+}
+.my-hobby1 p{
+    line-height:30px;
+    text-align: left;
+    white-space: pre-line;
+    padding-top:2.5%;
+    padding-right:260px;
+    text-align: right;
+    padding-bottom:3.5%;
+}
+.my-hobby2{
+    margin:10% 0 0 0%;
+    background-color:peachpuff;
+    width:80%;
+    font-family:gm;
+    font-weight: normal;
+}
+.my-hobby2 h2{
+    color:cornflowerblue;
+    font-size:1.5rem;
+    padding-left:260px;
+    padding-top:5%;
+}
+.my-hobby2 p{
+    line-height:30px;
+    text-align: left;
+    white-space: pre-line;
+    padding-left:260px;
+    padding-top:2.5%;
+    padding-bottom:3.5%;
+}
+.my-hobby3{
+    margin:10% 0 0 22.5%;
+    background-color:peachpuff;
+    font-family:gm;
+    font-weight: normal;
+}
+.my-hobby3 h2{
+    color:cornflowerblue;
+    text-align: right;
+    font-size:1.5rem;
+    padding-right:260px;
+    padding-top:5%;
+}
+.my-hobby3 p{
+    line-height:30px;
+    text-align: left;
+    white-space: pre-line;
+    padding-top:2.5%;
+    padding-right:260px;
+    text-align: right;
+    padding-bottom:3.5%;
+}
+.about-footer{
+    text-align: center;
+    padding-top:5%;
+    padding-bottom:5%;
+    font-family:gm;
+    color:cornflowerblue;
+    font-weight: bold;
+    font-size:1.5rem;
+}
+

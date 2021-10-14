@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/pro2.css" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/pro2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a class="menu_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div>
+                    <a href="main.html">Main</a>
+                    <a href="aboutme.html">About me</a>
+                    <a href="project.html">Project</a>
+                    <a href="contact.html">Contact</a>
+                </div> 
+                
+            </nav>
+            <button id="list" class="proBtn" 
+            onclick="location.href='project.html'">List
+            </button>
+            <button id="pro" class="proBtn" 
+            onclick="location.href='aboutme.html'">About
+            </button>
+        </div>
+    </header>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <a id="topBtn" href="#"><img src="./img/top.png"><br>UP!</a>
+
+    <section id=section1 style="height:980px;">
+        <div class="container">
+            <div class="content">
+                <ul class="clearfix">
+                    <li>
+                        <div>
+                            <div class="text">
+                                <p>Younglim</p>
+                                <p>clone</p>
+                                <p>project</p>
+                            </div>
+                            <div class="text2">
+                                2021.08.09 ~ 08.25
+                                Clone project
+
+                                sass로 제작한 영림토탈인테리어 사이트 클론 프로젝트입니다. 
+                                모든 코딩은 100% 본인 작업이며, 포트폴리오용으로 제작하였음을 밝힙니다.
+                            </div>
+                            <span class="left">
+                                <a href='https://bbibbu0223.github.io/younglim/' 
+                                target='_blank'>Site view</a>
+                            </span>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div>
+                            <div class="image" style="height: 980px;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="project2">
+        <img src="./img/icon-younglim-logo.png">
+    </div>
+    
+    <div class="detail up-on-scroll">
+        <h3 class="up-on-scroll">1. 기존 사이트의 개선점</h3>
+        <img src="./img/pj2-con-1.gif" alt="pj2con1">
+        <p class="pj2con up-on-scroll">
+        1. 원본 사이트의 메인 페이지는 클릭으로 넘어가는 슬라이드 였습니다. 
+        방문자가 이 기능을 모르고 지나치면 다른 정보들을 놓칠 수 있을 거 같아 메인 페이지에 슬릭 기능을 
+        넣어 자동으로 5초마다 바뀌도록 설정했습니다.
+        </p>
+    </div>
+
+    <div class="detail2 up-on-scroll">
+        <img src="./img/pj2-con-2.gif" alt="pj2con2">
+        <p class="pj2con-1 up-on-scroll">
+        2. 메인페이지의 메뉴는 드롭다운 형식으로 이루어져 있으며 드롭다운이 동작하면 나오는 서브 메뉴 우측에는 
+        이벤트 배너와 e.카달로그가 자리잡고 있었습니다. 이벤트 배너 또한 메인 슬라이드와 같은 클릭으로 넘어가는 형식이었고
+        위와 같은 생각에(사용자가 이벤트를 놓칠 수 있다)슬릭 기능을 넣어 자동으로 4초 마다 바뀌도록 설정했습니다.
+        </p>
+    </div>
+
+    <div class="detail3 up-on-scroll">
+        <img src="./img/pj2-con-3.gif" alt="pj2con3">
+        <p class="pj2con-2 up-on-scroll">
+        3. 또한 우측 하단에는 리모델링 상담버튼이 있습니다. 원본 사이트의 상담버튼은 absolute로 띄워 놓은 정적인 형태였습니다. 
+        이를 약간 변형하여 방문자가 스크롤하면 버튼이 따라오도록 변경해보았습니다.
+            
+            
+        </p>
+    </div>
+
+    <div class="design up-on-scroll">
+        <h3>2. 디자인 방향</h3>
+        <img src="./img/color1.png" alt="color1">
+        
+        <div class="color-txt up-on-scroll">
+            <div class="txt1">
+                보조색
+                #f6f5f3
+            </div>
+            <div class="txt2">
+                주조색
+                #707070
+            </div>
+            <div class="txt3">
+                보조색
+                #ffffff
+            </div>
+            <div class="txt4">
+                강조색
+                #c93d22
+            </div>
+        </div>
+        
+
+        <div class="font up-on-scroll">
+            <div class="fontcon">Font : NotoSansKR
+            구글 웹폰트에서 제공하는 노토산스KR로 깔끔함과 모던함이 보이게 메인과 본문 폰트로 선정했습니다.    
+            </div>
+        </div>
+        
+    </div>
+    <div class="prevnext">
+        <button id="prev" class="prevpage" 
+                onclick="location.href='Pro1.html'">Prev
+        </button>
+        <button id="next" class="nextpage" 
+                onclick="location.href='Pro3.html'">Next
+        </button>
+    </div>
+</body>
+</html>

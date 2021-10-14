@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/pro1.css" rel="stylesheet">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/pro1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a class="menu_trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div>
+                    <a href="main.html">Main</a>
+                    <a href="aboutme.html">About me</a>
+                    <a href="project.html">Project</a>
+                    <a href="contact.html">Contact</a>
+                </div> 
+                
+            </nav>
+            <button id="list" class="proBtn" 
+            onclick="location.href='project.html'">List
+            </button>
+            <button id="pro" class="proBtn" 
+            onclick="location.href='aboutme.html'">About
+            </button>
+        </div>
+    </header>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <a id="topBtn" href="#"><img src="./img/top.png"><br>UP!</a>
+    
+    <section id=section1 style="height:980px;">
+        <div class="container">
+            <div class="content">
+                <ul class="clearfix">
+                    <li>
+                        <div>
+                            <div class="text">
+                                <p>Sentimare</p>
+                                <p>renewal</p>
+                                <p>project</p>
+                            </div>
+                            <div class="text2">
+                                2021.07~08
+                                Renewal project
+
+                                충남 태안 학암포 해수욕장에 위치한 펜션, 센티마르 사이트 리뉴얼 프로젝트 입니다.
+                                모든 코딩은 100% 본인 작업이며, 포트폴리오용으로 제작하였음을 밝힙니다.
+                            </div>
+                            <span class="left">
+                                <a href='https://bbibbu0223.github.io/sentimare/index.html' 
+                                target='_blank'>Site view</a>
+                            </span>
+                        </div>
+                    </li>
+                
+                    <li>
+                        <div>
+                            <div class="image" style="height: 980px;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="project1">
+        <img src="./img/logo2.png">
+    </div>
+    
+    <div class="detail up-on-scroll">
+        <h3 class="up-on-scroll">1. 기존 사이트의 문제점과 개선 방향</h3>
+        <div class="pj1con">
+            <img src="./img/pj1-con2.png" alt="pj1con2">
+            <p class="pj1con-txt up-on-scroll">
+                우선 모바일 페이지만 존재하며 구성은 전체적으로 산만하고 트렌드에 뒤떨어진 디자인이었습니다.
+                정보들이 대게 줄 글로 이루어져 있어 가독성이 떨어져 방문하였을 때 원활한 정보 습득에
+                어려움을 주고 있었습니다. 상단과 하단의 아이콘 배치가 중복되어있는 점 등을 고려하려 
+                리뉴얼 기준에 부합하다 생각하여 프로젝트에 선정하게 되었습니다.
+                
+                개선 방향을 위해 동적인 부분과 객실 정보를 data.json으로 처리하여 추후에 수정이
+                간편할 수 있게 하였습니다.
+            </p>
+        </div>
+    </div>
+    
+    <div class="design up-on-scroll">
+        <h3>2. 디자인 방향</h3>
+        <p>
+        해수욕장 (충남 태안 학암포) 에 위치한 펜션이므로 바다를 떠올릴 수 있는 푸른 계열을 (톤앤무드를 유지할 수 있는) 메인 색상으로 배치했습니다.
+        메인컬러와 어울리는 보조색으로 심심하지 않은 자연스러운 디자인을 설계한 후 심플한 레이아웃을 베이스로 사용자에게 필요한 정보를 제공하고, 
+        깔끔한 배치로 면분할을 구축하고 중복되는 기능은 제거하여 필수 기능만 남겨놓았습니다.
+        </p>
+        <img src="./img/color.png" alt="color">
+        
+        <div class="color-txt up-on-scroll">
+            <div class="txt1">주조색
+                #292f4e
+            </div>
+            <div class="txt2">보조색
+                #ececec
+            </div>
+            <div class="txt3">보조색
+                #ffffff
+            </div>
+        </div>
+    </div>   
+
+    <div class="font up-on-scroll">
+        <div class="fontcon">Font : Gowun Dodum Designed by Yanghee Ryu
+        구글 웹폰트에서 제공하는 고운돋음으로 깔끔함과 여행의 설렘이 느껴지게 메인과 본문 폰트로 선정했습니다.    
+        </div>
+    </div>
+
+    <div>
+        <div class="pj1-contents2 up-on-scroll">
+            <h3>3. 디자인 결과물</h3>
+                <img src="./img/design1.png"alt="pro1-1">
+                <img src="./img/design2.png"alt="pro1-2">
+        </div>
+    </div>
+
+    <button id="next" class="nextpage" 
+            onclick="location.href='pro2.html'">Next
+    </button>
+</body>
+</html>

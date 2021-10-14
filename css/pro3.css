@@ -1,0 +1,329 @@
+body{background: cornsilk;}
+.up-on-scroll{
+    transition: transform 0.9s, opacity 1s;
+}
+#test {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family:consola;
+    src: url("../font/consola.ttf");
+}
+@font-face {
+    font-family:gm;
+    src: url("../font/GmarketSansTTFMedium.ttf");
+}
+@font-face {
+    font-family:nt;
+    src: url("../font/NotoSansKR-Medium.otf");
+}
+body{background:cornsilk;}
+a#topBtn { 
+    position: fixed;
+    right: 2%; 
+    bottom: 3%; 
+    display: none; 
+    z-index: 9999; 
+    text-align: center;
+    text-decoration: none;
+    color:cornflowerblue;
+    font-family:consola;
+    font-weight: bold;
+    font-size:1.5rem;
+    animation: rot-top 3s infinite;
+    transition-delay:.3s;
+    }
+@keyframes rot-top {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(-10deg);}
+    100%{transform: rotate(0);}
+}
+button#pro{
+    position: fixed;
+    right:25px;
+    margin:50px;
+    background: none;
+    font-family:consola;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size:1.2rem;
+    border:none;
+    cursor: pointer;
+}
+#section1{
+    display: block;
+    background-color:peachpuff;
+    width:100%;
+    float:left;
+}
+.content .clearfix{
+    list-style: none;
+}
+.content .text{
+    display: block;
+    position: relative;
+    color:olivedrab;
+    font-family:consola;
+    font-size:2.5rem;
+    font-weight: bold;
+    line-height:4.5rem;
+    left:15%; padding-top:25%;
+}
+.content .text2{
+    position: relative;
+    color:olivedrab;
+    font-family:gm;
+    font-size:1rem;
+    line-height:1.5rem;
+    left:15%;
+    white-space: pre-line;
+}
+span {
+    position: relative;
+    left:15%; 
+    font-size:3rem;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-text-stroke-color: olivedrab;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background-size .9s cubic-bezier(0.50, 0.03, 0.45, 0.84);
+}
+.left a{
+    text-decoration: none;
+    color:olivedrab;
+}
+.left {
+    background-image: linear-gradient(90deg, olivedrab 0%, olivedrab 50%, transparent 50.1%);
+    background-size: 0% 100%;
+}
+.left:hover {
+    background-size: 200% 100%;
+}
+#section1 .content ul li{
+    float: left;
+    width:50%;
+}
+#section1 .content ul li > div .image{
+    background: url(../img/pj2-con.png) no-repeat 50% 90%;
+    background-size: cover;
+}
+.project2{
+    animation: fadein 2s;
+}
+.project2 img{
+    position: relative;
+    padding-top:5%;
+    left:43.5%;
+    animation: fadein 2.5s;
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+button#ent{
+    position: absolute;
+    top:85%; right:21.3%;
+    background:cornflowerblue;
+    border-radius:50px;
+    width:120px; height:35px;
+    border:none;
+    color:cornsilk;
+    font-weight:bold;
+    font-size:1.2rem;
+    cursor: pointer;
+    font-family:consola;
+}
+
+.pj2-contents h3{
+    padding-top:5%;
+    font-family:gm;
+    font-size:1.5rem;
+}
+.pj2-contents p{
+    text-align: left;
+    white-space: pre-line;
+    line-height:30px;
+    font-family:gm;
+    font-size:1rem;
+}
+.detail{
+    margin-top:5%;
+    background: linen;
+    padding-left:24%;
+    padding-bottom:3%;
+}
+.detail h3{
+    padding-top:5%;
+    font-family:gm;
+    font-size:1.5rem;
+}
+.detail .pj2con{
+    text-align: left;
+    white-space: pre-line;
+    line-height:30px;
+    font-family:gm;
+    font-size:1rem;
+}
+.detail img {
+    padding-top:2%;
+    width:1050px; height:450px;
+}
+.detail2{
+    margin-top:5%;
+    padding-left:24%;
+    padding-bottom:3%;
+}
+.detail2 h3{
+    padding-top:5%;
+    font-family:gm;
+    font-size:1.5rem;
+}
+.detail2 .pj2con-1{
+    text-align: left;
+    white-space: pre-line;
+    line-height:30px;
+    font-family:gm;
+    font-size:1rem;
+}
+.detail2 img {
+    padding-top:5%;
+    width:1050px; height:450px;
+}
+.detail3{
+    margin-top:5%;
+    padding-left:24%;
+    background: linen;
+}
+.detail3 h3{
+    padding-top:5%;
+    font-family:gm;
+    font-size:1.5rem;
+}
+.detail3 .pj2con-2{
+    text-align: left;
+    white-space: pre-line;
+    line-height:30px;
+    font-family:gm;
+    font-size:1rem;
+}
+.detail3 img {
+    padding-top:5%;
+    width:1050px; height:450px;
+}
+.design{
+    padding-left:24%;
+    padding-top:5%;
+}
+.design h3{
+    font-family:gm;
+    font-size:1.5rem;
+}
+.design p{
+    text-align: left;
+    white-space: pre-line;
+    line-height:30px;
+    font-family:gm;
+    font-size:1rem;
+}
+.design img{
+    padding-top:1%;
+    padding-left:9%;
+}
+.design .color-txt{
+    display:flex;
+    font-family:gm;
+}
+.color-txt .txt1{
+    margin:1%;
+    margin-left:10.5%;
+}
+.color-txt .txt2{
+    margin:1%;
+    margin-left:4.5%;
+}
+.color-txt .txt3{
+    margin:1%;
+    margin-left:5.5%;
+}
+.color-txt .txt4{
+    margin:1%;
+    margin-left:5%;
+}
+.font{
+    margin-top:3%;
+    margin-left:-32%;
+}
+.font .fontcon{
+    white-space: pre-line;
+    font-family:nt;
+    text-align: center;
+    font-size:1.1rem;
+    padding-bottom:5%;
+}
+.prevnext{
+    display: flex;
+}
+button#prev{
+    padding:2.5% 0 2.5% 42.5%;
+    background: none;
+    font-family:consola;
+    color: olivedrab;
+    font-weight: bold;
+    font-size:1.2rem;
+    border:none;
+    cursor: pointer;
+}
+button#prev:hover{
+    color:cornflowerblue;
+    transition:.5s;
+}
+button#next{
+    padding:2.5% 0 2.5% 10%;
+    background: none;
+    font-family:consola;
+    color: olivedrab;
+    font-weight: bold;
+    font-size:1.2rem;
+    border:none;
+    cursor: pointer;
+}
+button#next:hover{
+    color:cornflowerblue;
+    transition:.5s;
+}

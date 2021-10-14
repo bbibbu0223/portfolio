@@ -1,0 +1,262 @@
+@font-face {
+    font-family:consola;
+    src: url("../font/consola.ttf");
+}
+@font-face {
+    font-family:gm;
+    src: url("../font/GmarketSansTTFMedium.ttf");
+}
+body{background:peachpuff;}
+button#pro{
+    position: fixed;
+    right:25px;
+    margin:50px;
+    background: none;
+    font-family:consola;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size:1.2rem;
+    border:none;
+    cursor: pointer;
+}
+    /* reset */
+
+   *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+a {
+    text-decoration: none;
+    transition:  all 0.2s;
+}
+img {
+    width: 100%;
+    vertical-align: top; /* 여백 초기화 */
+}
+ul {list-style: none;}
+a {text-decoration: none; transition: all 0.2s;}
+
+
+
+/* main */
+body {
+    --color-h1 : cornflowerblue;
+    --color-title : olivedarb;
+    --color-sub : #999;
+    --color-link : #000;
+    --color-bg : #111;
+    --font-cafe : 'Arita-buri-SemiBold';
+    --font-lato : 'Lato', sans-serif;
+    --aspect-ratio : 33/17;
+
+    background-color:cornsilk;
+    color: cornflowerblue;
+    font-family: var(--font-cafe);
+}
+
+#parallax-wrap h1 {
+    color: var(--color-h1);
+    font-family: var(--font-lato);
+    font-size: 8vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10vw 8vw 0 8vw;
+}
+#parallax-wrap h1 em {
+    display: block;
+    font-weight: 100;
+    padding-left: 18vw;
+}
+.contents {
+    margin: 0 auto 35vh;
+    width: 100%;
+    overflow: hidden;
+}
+.content-item {
+    position: relative;
+    width: 1200px;
+    max-width: 90vw;
+    margin: 60vh 0 60vh;
+}
+.content-item:nth-child(even){
+    margin-left: auto;
+}
+.content-item-num {
+    font-size: 25vw;
+    font-weight: 100;
+    font-family: var(--font-lato);
+    position: absolute;
+    right: -5vw; top: -20vw;
+    opacity: 0.08;
+}
+.content-item:nth-child(even) .content-item-num {
+    right: auto;
+    left: -5vw;
+}
+.content-item-title {
+    text-align: right;
+    padding-bottom: 5px;
+}
+.content-item:nth-child(even) .content-item-title {
+    text-align-last: left;
+    padding-bottom: 5px;
+}
+
+.content-item-imgWrap {
+    position: relative;
+    --width: 100%;
+    width: var(--width);
+    padding-bottom: calc(var(--width) / (var(--aspect-ratio)));
+    overflow: hidden;
+}
+.content-item-img {
+    width: var(--width);
+    --overflow: 0.1px;
+    position: absolute; 
+    top: calc(-1 * var(--overflow));
+    height: calc(100% + (3 * var(--overflow)));
+    background-size: cover;
+    background-position: 50% 0;
+}
+.content-item-desc {
+    font-size: 3.5vw;
+    line-height: 1.4;
+    text-align: right;
+    word-break: keep-all;
+    margin-right: -4vw;
+    margin-top: -6vw;
+    padding-left: 10vw;
+    z-index: 100;
+    position: relative;
+}
+.content-item:nth-child(even) .content-item-desc {
+    text-align: left;
+    margin-right: auto;
+    padding-left: 0;
+    margin-left: -4vw;
+    padding-right: 10vw;
+}
+/* position: relative;
+    1. position: absolute 기준점 역할
+    2. position: absolute를 사용하지 않고 z-index를 사용할 경우
+    3. position: absolute를 사용하지 않고 left, top을 통해서 위치를 설정할 경우
+*/
+.content-item:nth-child(even) .content-item-desc {
+    text-align: left;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 10vw;
+    margin-left: -4vw;
+}
+.content-item:nth-child(1) .content-item-img {
+    background: url(./img/pj1.png);
+    background-size: cover;
+}
+.content-item:nth-child(2) .content-item-img {
+    background: url(./img/pj2.png);
+    background-size: cover;
+}
+.content-item:nth-child(3) .content-item-img {
+    background: url(./img/pj3.png);
+    background-size: cover;
+}
+.content-item:nth-child(4) .content-item-img {
+    background: url(./img/pj4.png);
+    background-size: cover;
+}
+.content-item:nth-child(5) .content-item-img {
+    background: url(img/images05.jpg);
+    background-size: cover;
+}
+
+/* reveal */
+.reveal > div, 
+.reveal > span {
+    opacity: 0;
+}
+.reveal.show > div,  
+.reveal.show > span {
+    animation: opacity 1000ms 400ms linear forwards;
+}
+
+.reveal {
+    position: relative;
+}
+.reveal::before {
+    content: '';
+    position: absolute;
+    right: 0; top: 0;
+    width: 0;
+    height: 100%;
+    z-index: 100;
+    background: #ece0d8;
+}
+.reveal.reveal-two::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 0;
+    width: 0;
+    height: 100%;
+    z-index: 100;
+    background: #dc6e25;
+}
+
+/* 기본값 */
+.reveal.show::before {
+    animation: reveal 1000ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+
+.reveal.reveal-RTL.show::before {
+    animation: reveal-RTL 1000ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+.reveal.reveal-TTB.show::before {
+    animation: reveal-TTB 1000ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+.reveal.reveal-BTT.show::before {
+    animation: reveal-BTT 1000ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+/* 두가지 */
+.reveal.reveal-two.show::after {
+    animation: reveal 1000ms 300ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+.reveal.reveal-RTL.reveal-two.show::after {
+    animation: reveal-RTL 1000ms 300ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+.reveal.reveal-TTB.reveal-two.show::after {
+    animation: reveal-TTB 1000ms 300ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+.reveal.reveal-BTT.reveal-two.show::after {
+    animation: reveal-BTT 1000ms 300ms cubic-bezier(0.77, 0, 0.1, 1);
+}
+
+
+@keyframes reveal{
+    0% {width: 0%; left: 0;}
+    50% {width: 100%; left: 0;}
+    80% {width: 100%; left: 0;}
+    100% {width: 0; left: 100%;}
+}
+@keyframes reveal-RTL{
+    0% {width: 0%; right: 0;}
+    50% {width: 100%; right: 0;}
+    80% {width: 100%; right: 0;}
+    100% {width: 0; right: 100%;}
+}
+@keyframes reveal-TTB{
+    0% {width: 100%; height: 0%; top: 0;}
+    50% {width: 100%; height: 100%; top: 0;}
+    80% {width: 100%; height: 100%; top: 0;}
+    100% {width: 100%; height: 0; top: 100%;}
+}
+@keyframes reveal-BTT{
+    0% {width: 100%; height: 0%; top: auto; bottom: 0;}
+    50% {width: 100%; height: 100%; top: auto; bottom: 0;}
+    80% {width: 100%; height: 100%; top: auto; bottom: 0;}
+    100% {width: 100%; height: 0; top: auto; bottom: 100%;}
+}
+@keyframes opacity{
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    70% {opacity: 1;}
+    100% {opacity: 1;}
+}
