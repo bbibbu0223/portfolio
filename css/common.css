@@ -144,3 +144,13 @@ header> div nav > div.active{
     opacity: .7;
     transform: scale(4);
 }
+
+/* media */
+@media (max-width: 768px){
+    header > div nav> div {
+        width:100%; height:100%;
+        opacity:100%;
+    }
+    .cursor{display: none;}
+    .cursor-follower{display: none;}
+}

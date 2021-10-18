@@ -257,3 +257,231 @@ a#topBtn {
     font-size:1.5rem;
 }
 
+/* media */
+
+@media (max-width: 768px){
+    button#project{
+        display: none;
+    }
+    .me{
+        position:absolute;
+        top:130px; left:5px;
+        width:auto;
+        height:auto;
+        z-index:-1;
+        transition: all 0.5s 0.2s;
+        animation: rot-img1 3s infinite;
+        transition-delay:.3s;
+    }
+    .me img{
+        width:330px; height:330px;
+    }
+    @keyframes rot-img1 {
+        0%{transform: rotate(0);}
+        50%{transform: rotate(10deg);}
+        100%{transform: rotate(0);}
+    }
+    .intro{
+        position: absolute;
+        top:160px; left:280px;
+    }
+    .intro p{
+        line-height:30px;
+        letter-spacing:.3px;
+        font-size:1.2rem;
+        font-family:gm;
+        text-align: center;
+    }
+    .intro2{
+        position: absolute;
+        top:340px; left:300px;
+    }
+    .intro2 p{
+        text-align: center;
+        line-height:35px;
+        letter-spacing:.3px;
+        font-size:1rem;
+        
+        /* font-weight: bold; */
+        font-family:gm;
+    }
+    .skill-list{
+        position: absolute;
+        top:550px; left:60px;
+        font-weight:bold;
+        font-size:1.5rem;
+        font-family:gm;
+        color:olivedrab;
+    }
+    .skill{
+        position: absolute;
+        display: flex;
+        top:600px; left:30px;
+    }
+    .my-intro{
+        position: absolute;
+        top:850px; left:230px;
+        text-align: center;
+        font-weight:bold;
+        font-size:2.5rem;
+        font-family:gm;
+        color:cornflowerblue;
+    }
+    .my-intro1{
+        padding-top:135%;
+        width:100%;
+        font-family:gm;
+        font-weight: normal;
+    }
+    .my-intro1 h2{
+        text-align: center;
+        color:#6495ed;
+        font-size:1.5rem;
+        padding-top:5%;
+        padding-left:0;
+        background-color:peachpuff;
+    
+    }
+    .my-intro1 p{
+        line-height:30px;
+        text-align: center;
+        white-space: pre-line;
+        padding-left:0;
+        padding-top:2.5%;
+        padding-bottom:3.5%;
+        background-color:peachpuff;
+    }
+    .my-intro2{
+        margin:10% 0 0 0;
+        width:100%;
+        font-family:gm;
+        font-weight: normal;
+    }
+    .my-intro2 h2{
+        text-align: center;
+        color:#6495ed;
+        font-size:1.5rem;
+        padding-top:5%;
+        padding-left:0;
+        background-color:peachpuff;
+    }
+    .my-intro2 p{
+        line-height:30px;
+        text-align: center;
+        white-space: pre-line;
+        padding-left:0;
+        padding-top:2.5%;
+        padding-bottom:3.5%;
+        background-color:peachpuff;
+    }
+    .my-intro3{
+        margin:10% 0 0 0%;
+        background-color:peachpuff;
+        width:100%;
+        font-family:gm;
+        font-weight: normal;
+    }
+    .my-intro3 h2{
+        color:cornflowerblue;
+        font-size:1.5rem;
+        padding-left:0;
+        padding-top:5%;
+        text-align: center;
+    }
+    .my-intro3 p{
+        line-height:30px;
+        text-align: center;
+        white-space: pre-line;
+        padding-left:0;
+        padding-top:2.5%;
+        padding-bottom:3.5%;
+    }
+    .my-hobby{
+        margin-top:10%; 
+        padding-left:230px;
+        font-weight:bold;
+        font-size:2.5rem;
+        font-family:gm;
+        color:cornflowerblue;
+    }
+    .my-hobby1{
+        margin:5% 0 0 0%;
+        background-color:peachpuff;
+        font-family:gm;
+        font-weight: normal;
+        width:100%;
+    }
+    .my-hobby1 h2{
+        color:cornflowerblue;
+        text-align: center;
+        font-size:1.5rem;
+        padding-right:0;
+        padding-top:5%;
+    }
+    .my-hobby1 p{
+        line-height:30px;
+        text-align: center;
+        white-space: pre-line;
+        padding-top:2.5%;
+        padding-right:0;
+        padding-bottom:3.5%;
+    }
+    .my-hobby2{
+        margin:10% 0 0 0%;
+        background-color:peachpuff;
+        width:100%;
+        font-family:gm;
+        font-weight: normal;
+    }
+    .my-hobby2 h2{
+        color:cornflowerblue;
+        text-align:center;
+        font-size:1.5rem;
+        padding-left:0;
+        padding-top:5%;
+    }
+    .my-hobby2 p{
+        line-height:30px;
+        text-align: center;
+        white-space: pre-line;
+        padding-left:0;
+        padding-top:2.5%;
+        padding-bottom:3.5%;
+    }
+    .insta{
+        display:none;
+    }
+    .my-hobby3{
+        margin:10% 0 0 0;
+        width:100%;
+        background-color:peachpuff;
+        font-family:gm;
+        font-weight: normal;
+    }
+    .my-hobby3 h2{
+        color:cornflowerblue;
+        text-align: center;
+        font-size:1.5rem;
+        padding-right:0;
+        padding-top:5%;
+    }
+    .my-hobby3 p{
+        line-height:30px;
+        text-align: center;
+        white-space: pre-line;
+        padding-top:2.5%;
+        padding-right:0;
+        padding-bottom:3.5%;
+    }
+    .about-footer{
+        text-align: center;
+        padding-top:5%;
+        padding-bottom:5%;
+        font-family:gm;
+        color:cornflowerblue;
+        font-weight: bold;
+        font-size:1.5rem;
+    }
+
+}
+

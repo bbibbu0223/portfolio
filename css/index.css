@@ -167,3 +167,91 @@ footer {
     font-size: 1rem;
     font-family:consola;
 }
+
+/* media */
+
+@media (max-width: 768px){
+    #main-back #c1{
+        position:absolute;
+        top:58%; left:63%;
+        transition: all 0.5s 0.1s;
+        animation: rot-img1 2s infinite;
+        transition-delay:.4s;
+    }
+    @keyframes rot-img1 {
+        0%{transform: rotate(0);}
+        50%{transform: rotate(15deg);}
+        100%{transform: rotate(0);}
+    }
+    #main-back #c2{
+        position:absolute;
+        left:72.5%; top:50%;
+    }
+    #main-back #c3{
+        position:absolute;
+        left:35%; top:68.5%;
+    }
+    #main-back #c4{
+        position:absolute;
+        left:50%; top:32%;
+        transition: all 0.5s 0.2s;
+        animation: motion 0.5s linear 0s infinite alternate; margin-top: 0;
+        transition-delay:.6s;
+    }
+    @keyframes motion {
+        0% {margin-top: 0px;}
+        100% {margin-top: 25px;}
+    }
+    #main-back #c5{
+        position:absolute;
+        left:20%; top:25%;
+    }
+    #main-back #c6{
+        position:absolute;
+        left:30%; top:38%;
+        transform-origin: 50% 0%;
+        animation-name: shake;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.5s;
+    }
+    @keyframes shake {
+        0%{
+            transform: rotate(0deg);
+        }
+        10%{
+            transform: rotate(45deg);
+        }
+        20%{
+            transform: rotate(-45deg);
+        }
+        30%{
+            transform: rotate(30deg);
+        }
+        40%{
+            transform: rotate(-30deg);
+        }
+        50%{
+            transform: rotate(10deg);
+        }
+        60%{
+            transform: rotate(-10deg);
+        }
+        70%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+    #main-back #c7{
+        position:absolute;
+        right:20%; top:30%;
+    }
+    .m-none{display: none;}
+    footer{
+        top:95%; left:2.5%;
+    }
+    button#pj{display: none;}
+    button#pro{display:none;}
+}
