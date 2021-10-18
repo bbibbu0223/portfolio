@@ -61,15 +61,23 @@ a#topBtn {
 
 .intro{
     position: absolute;
-    top:200px; left:650px;
+    top:215px; left:650px;
+}
+.intro h2{
+    color:cornflowerblue;
+    font-family:gm;
+    display: inline-block;
+    font-size:1.8rem;
 }
 .intro p{
+    display: inline-block;
     line-height:45px;
     letter-spacing:.3px;
     font-size:1.2rem;
-    
     font-family:gm;
+    font-weight:bold;
 }
+
 .intro2{
     position: absolute;
     top:480px; left:1150px;
@@ -77,10 +85,9 @@ a#topBtn {
 .intro2 p{
     text-align: right;
     line-height:35px;
-    letter-spacing:.3px;
+    letter-spacing:.5px;
     font-size:1rem;
-    
-    /* font-weight: bold; */
+    font-weight: bold;
     font-family:gm;
 }
 .skill-list{
@@ -121,6 +128,7 @@ a#topBtn {
 
 }
 .my-intro1 p{
+    font-weight:bold;
     line-height:30px;
     text-align: left;
     white-space: pre-line;
@@ -131,7 +139,6 @@ a#topBtn {
 }
 .my-intro2{
     margin:10% 0 0 22.5%;
-    
     background-color:peachpuff;
     
     font-family:gm;
@@ -145,6 +152,7 @@ a#topBtn {
     padding-top:5%;
 }
 .my-intro2 p{
+    font-weight:bold;
     text-align: left;
     white-space: pre-line;
     line-height:30px;
@@ -167,6 +175,7 @@ a#topBtn {
     padding-top:5%;
 }
 .my-intro3 p{
+    font-weight:bold;
     line-height:30px;
     text-align: left;
     white-space: pre-line;
@@ -196,6 +205,7 @@ a#topBtn {
     padding-top:5%;
 }
 .my-hobby1 p{
+    font-weight:bold;
     line-height:30px;
     text-align: left;
     white-space: pre-line;
@@ -218,6 +228,7 @@ a#topBtn {
     padding-top:5%;
 }
 .my-hobby2 p{
+    font-weight:bold;
     line-height:30px;
     text-align: left;
     white-space: pre-line;
@@ -239,6 +250,7 @@ a#topBtn {
     padding-top:5%;
 }
 .my-hobby3 p{
+    font-weight:bold;
     line-height:30px;
     text-align: left;
     white-space: pre-line;

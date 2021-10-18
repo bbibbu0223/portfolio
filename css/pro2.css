@@ -114,6 +114,7 @@ button#pro{
     position: relative;
     color:cornflowerblue;
     font-family:gm;
+    font-weight: bold;
     font-size:1rem;
     line-height:1.5rem;
     left:15%;
@@ -192,6 +193,7 @@ button#ent{
     white-space: pre-line;
     line-height:30px;
     font-family:gm;
+    font-weight: bold;
     font-size:1rem;
 }
 .detail{
@@ -210,6 +212,7 @@ button#ent{
     white-space: pre-line;
     line-height:30px;
     font-family:gm;
+    font-weight: bold;
     font-size:1rem;
 }
 .detail img {
@@ -231,6 +234,7 @@ button#ent{
     white-space: pre-line;
     line-height:30px;
     font-family:gm;
+    font-weight: bold;
     font-size:1rem;
 }
 .detail2 img {
@@ -252,6 +256,7 @@ button#ent{
     white-space: pre-line;
     line-height:30px;
     font-family:gm;
+    font-weight: bold;
     font-size:1rem;
 }
 .detail3 img {
@@ -280,6 +285,7 @@ button#ent{
 .design .color-txt{
     display:flex;
     font-family:gm;
+    font-weight: bold;
 }
 .color-txt .txt1{
     margin:1%;

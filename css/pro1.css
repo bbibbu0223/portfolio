@@ -124,6 +124,7 @@ a#topBtn {
     color:cornsilk;
     font-family:gm;
     font-size:1rem;
+    font-weight:bold;
     line-height:1.5rem;
     left:15%;
     white-space: pre-line;
@@ -192,6 +193,7 @@ span {
     line-height:30px;
     font-family:gm;
     font-size:1rem;
+    font-weight: bold;
     text-align: center;
 }
 .detail img {
@@ -211,6 +213,7 @@ span {
     line-height:30px;
     font-family:gm;
     font-size:1rem;
+    font-weight:bold;
 }
 .design img{
     padding-top:1%;
@@ -219,6 +222,7 @@ span {
 .design .color-txt{
     display:flex;
     font-family:gm;
+    font-weight:bold;
 }
 .color-txt .txt1{
     margin:1%;
